@@ -1,0 +1,45 @@
+----Operations on Database
+
+---Using Case Function
+
+UPDATE Auto_Owners
+SET 
+    Person_name = CASE Registration_No
+                    WHEN 'MH32CD9012' THEN 'David Kelly'
+                    WHEN 'GJ33EF2345' THEN 'Victoria Hughes'
+                    WHEN 'DL34GH5678' THEN 'Mateo Russell'
+                    WHEN 'UP35IJ8901' THEN 'Penelope Butler'
+                    ELSE Person_name -- Handle any other cases, if needed
+                 END,
+    Address = CASE Registration_No
+                WHEN 'MH32CD9012' THEN '876 Spruce Ct, Gurgaon'
+                WHEN 'GJ33EF2345' THEN '210 Cedar Ave, Patna'
+                WHEN 'DL34GH5678' THEN '456 Elm Rd, Kolkata'
+                WHEN 'UP35IJ8901' THEN '678 Pine Ln, Thiruvananthapuram'
+                ELSE Address -- Handle any other cases, if needed
+             END,
+    Phone_No = CASE Registration_No
+                WHEN 'MH32CD9012' THEN '+91 8765432109'
+                WHEN 'GJ33EF2345' THEN '+91 3210987654'
+                WHEN 'DL34GH5678' THEN '+91 2109876543'
+                WHEN 'UP35IJ8901' THEN '+91 1098765432'
+                ELSE Phone_No -- Handle any other cases, if needed
+              END,
+    Email_id = CASE Registration_No
+                 WHEN 'MH32CD9012' THEN 'david.kelly@example.com'
+                 WHEN 'GJ33EF2345' THEN 'victoria.hughes@example.com'
+                 WHEN 'DL34GH5678' THEN 'mateo.russell@example.com'
+                 WHEN 'UP35IJ8901' THEN 'penelope.butler@example.com'
+                 ELSE Email_id -- Handle any other cases, if needed
+               END
+WHERE Registration_No IN ('MH32CD9012', 'GJ33EF2345', 'DL34GH5678', 'UP35IJ8901');
+
+
+
+
+
+
+
+
+
+
