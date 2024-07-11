@@ -1,0 +1,682 @@
+
+--- Create the Vehicles table
+
+CREATE TABLE Vehicles (
+    Type_of_vehicle TEXT,
+    Brand_Name TEXT,
+    Model_of_vehicle TEXT);
+
+-- Insert data for various vehicle types
+
+INSERT INTO Vehicles (Type_of_vehicle, Brand_Name, Model_of_vehicle) VALUES
+-- Bikes
+
+('Bike', 'Honda', 'CBR 150R'),
+('Bike', 'Yamaha', 'YZF R15'),
+('Bike', 'Bajaj', 'Pulsar 220F'),
+('Bike', 'Royal Enfield', 'Classic 350'),
+('Bike', 'KTM', 'Duke 390'),
+('Bike', 'Suzuki', 'Gixxer SF'),
+('Bike', 'Hero', 'Splendor Plus'),
+('Bike', 'TVS', 'Apache RTR 160'),
+('Bike', 'Kawasaki', 'Ninja 300'),
+('Bike', 'Harley-Davidson', 'Iron 883'),
+('Bike', 'Ducati', 'Panigale V2'),
+('Bike', 'Triumph', 'Street Triple RS'),
+('Bike', 'BMW', 'G 310 R'),
+('Bike', 'Aprilia', 'RSV4'),
+
+
+-- Cars
+
+('Car', 'Maruti Suzuki', 'Swift'),
+('Car', 'Hyundai', 'Creta'),
+('Car', 'Honda', 'City'),
+('Car', 'Tata', 'Nexon'),
+('Car', 'Mahindra', 'XUV500'),
+('Car', 'Toyota', 'Innova Crysta'),
+('Car', 'Ford', 'EcoSport'),
+('Car', 'Kia', 'Seltos'),
+('Car', 'Volkswagen', 'Polo'),
+('Car', 'Renault', 'Duster'),
+('Car', 'Skoda', 'Rapid'),
+('Car', 'Jeep', 'Compass'),
+('Car', 'Nissan', 'Magnite'),
+('Car', 'MG', 'Hector'),
+
+-- Buses
+
+('Bus', 'Ashok Leyland', 'Lynx Smart'),
+('Bus', 'Tata', 'Starbus Ultra'),
+('Bus', 'Eicher', 'Skyline Pro'),
+('Bus', 'Volvo', '9400 B8R'),
+('Bus', 'BharatBenz', 'Staff Bus'),
+('Bus', 'Mahindra', 'Cruiser School Bus'),
+('Bus', 'SML Isuzu', 'Executive LX'),
+('Bus', 'Force Motors', 'Traveller'),
+('Bus', 'Scania', 'Citywide'),
+('Bus', 'MAN', 'A95'),
+('Bus', 'Isuzu', 'Smoother CNG'),
+('Bus', 'Mercedes-Benz', 'Citaro'),
+
+-- Tractors
+
+('Tractor', 'Mahindra', '575 DI'),
+('Tractor', 'John Deere', '5050D'),
+('Tractor', 'Swaraj', '744 FE'),
+('Tractor', 'Massey Ferguson', '241 DI'),
+('Tractor', 'New Holland', '3630 TX'),
+('Tractor', 'Eicher', '333 Super DI'),
+('Tractor', 'Sonalika', 'DI 750 III'),
+('Tractor', 'Kubota', 'NeoStar B2741'),
+('Tractor', 'Powertrac', 'Euro 50'),
+('Tractor', 'TAFE', '45 DI'),
+('Tractor', 'Escorts', 'Farmtrac 45'),
+('Tractor', 'Indo Farm', '2030 DI'),
+
+-- Mini Vans
+
+('Mini Van', 'Maruti Suzuki', 'Eeco'),
+('Mini Van', 'Tata', 'Magic Iris'),
+('Mini Van', 'Mahindra', 'Supro'),
+('Mini Van', 'Force Motors', 'Trax Cruiser'),
+('Mini Van', 'Ashok Leyland', 'Stile'),
+('Mini Van', 'Chevrolet', 'Enjoy'),
+('Mini Van', 'Renault', 'Lodgy'),
+('Mini Van', 'Nissan', 'Evalia'),
+('Mini Van', 'Toyota', 'Hiace'),
+('Mini Van', 'Datsun', 'GO+'),
+('Mini Van', 'Mercedes-Benz', 'V-Class'),
+('Mini Van', 'Volkswagen', 'Caravelle'),
+
+-- Mini Trucks
+
+('Mini Truck', 'Tata', 'Ace'),
+('Mini Truck', 'Mahindra', 'Jeeto'),
+('Mini Truck', 'Ashok Leyland', 'Dost'),
+('Mini Truck', 'Piaggio', 'Ape Xtra LDX'),
+('Mini Truck', 'Force Motors', 'Shaktiman 200'),
+('Mini Truck', 'Maruti Suzuki', 'Super Carry'),
+('Mini Truck', 'Bajaj', 'Maxima C'),
+('Mini Truck', 'Isuzu', 'D-MAX'),
+('Mini Truck', 'Eicher', 'Pro 1049'),
+('Mini Truck', 'Mahindra', 'Bolero Pickup'),
+('Mini Truck', 'Atul', 'Gemini Diesel'),
+('Mini Truck', 'Mahindra', 'Optimo Truck');
+
+-- lorry
+
+('Lorry', 'Volvo', 'FH16'),
+('Lorry', 'Scania', 'R730'),
+('Lorry', 'Mercedes-Benz', 'Actros'),
+('Lorry', 'MAN', 'TGX'),
+('Lorry', 'DAF', 'XF'),
+('Lorry', 'Iveco', 'Stralis'),
+('Lorry', 'Renault', 'T Range'),
+('Lorry', 'Fuso', 'Super Great'),
+('Lorry', 'Hino', '700 Series'),
+('Lorry', 'Kenworth', 'T680'),
+('Lorry', 'Peterbilt', '579'),
+('Lorry', 'Mack', 'Anthem'),
+('Lorry', 'Western Star', '5700'),
+('Lorry', 'Isuzu', 'Giga'),
+('Lorry', 'UD Trucks', 'Quon'),
+('Lorry', 'Ashok Leyland', 'Captain'),
+('Lorry', 'Tata Motors', 'Prima'),
+('Lorry', 'Mahindra', 'FURIO'),
+('Lorry', 'Eicher', 'Pro 8031XM'),
+('Lorry', 'BharatBenz', '2523C'),
+('Lorry', 'Volvo Trucks', 'FH'),
+('Lorry', 'MAN Trucks', 'TGS'),
+('Lorry', 'Scania Trucks', 'S730'),
+('Lorry', 'Renault Trucks', 'C'),
+
+--Auto
+
+('Auto Rickshaw', 'Bajaj', 'Bajaj RE'),
+('Auto Rickshaw', 'Piaggio', 'Piaggio Ape City'),
+('Three Wheeler', 'Mahindra', 'Mahindra Alfa'),
+('Auto Rickshaw', 'TVS', 'TVS King'),
+('Electric Rickshaw', 'Atul', 'Atul Gem'),
+('Auto Rickshaw', 'Piaggio', 'Piaggio Ape Xtra LDX'),
+('Cargo Auto', 'Bajaj', 'Bajaj Maxima C'),
+('Electric Cargo Auto', 'Mahindra', 'Mahindra Treo Zor'),
+('Auto Rickshaw', 'TVS', 'TVS Dazz'),
+('Auto Rickshaw', 'Atul', 'Atul Gemini'),
+('Auto Rickshaw', 'Piaggio', 'Piaggio Ape DXL'),
+('Auto Rickshaw', 'Bajaj', 'Bajaj Maxima CNG'),
+('Electric Auto Rickshaw', 'Mahindra', 'Mahindra e-Alfa Mini'),
+('Auto Rickshaw', 'TVS', 'TVS XL100'),
+('Electric Rickshaw', 'Atul', 'Atul Shakti');
+
+-- Create the table
+
+CREATE TABLE Car (
+    Car_model TEXT,
+    Car_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT ,
+    Registration_No TEXT
+);
+
+INSERT INTO Car (Car_model, Car_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+
+('Swift', 'Hatchback', 'Maruti Suzuki', 'KA01', 'KA01AB1234'),
+('City', 'Sedan', 'Honda', 'TN01', 'TN01CD5678'),
+('XUV500', 'SUV', 'Mahindra', 'AP01', 'AP01EF9012'),
+('i20', 'Hatchback', 'Hyundai', 'TS01', 'TS01GH3456'),
+('Creta', 'SUV', 'Hyundai', 'KL01', 'KL01IJ7890'),
+('Baleno', 'Hatchback', 'Maruti Suzuki', 'KA02', 'KA02KL1234'),
+('Verna', 'Sedan', 'Hyundai', 'TN02', 'TN02MN5678'),
+('Scorpio', 'SUV', 'Mahindra', 'AP02', 'AP02OP9012'),
+('Polo', 'Hatchback', 'Volkswagen', 'TS02', 'TS02QR3456'),
+('Fortuner', 'SUV', 'Toyota', 'KL02', 'KL02ST7890'),
+('Ecosport', 'SUV', 'Ford', 'KA03', 'KA03UV1234'),
+('Amaze', 'Sedan', 'Honda', 'TN03', 'TN03WX5678'),
+('Thar', 'SUV', 'Mahindra', 'AP03', 'AP03YZ9012'),
+('Altroz', 'Hatchback', 'Tata', 'TS03', 'TS03AB3456'),
+('Innova', 'SUV', 'Toyota', 'KL03', 'KL03CD7890'),
+('Duster', 'SUV', 'Renault', 'KA04', 'KA04EF1234'),
+('Civic', 'Sedan', 'Honda', 'TN04', 'TN04GH5678'),
+('XUV300', 'SUV', 'Mahindra', 'AP04', 'AP04IJ9012'),
+('Swift Dzire', 'Sedan', 'Maruti Suzuki', 'TS04', 'TS04KL3456'),
+('Celerio', 'Hatchback', 'Maruti Suzuki', 'KL04', 'KL04MN7890'),
+('Sonet', 'SUV', 'Kia', 'KA05', 'KA05OP1234'),
+('i10', 'Hatchback', 'Hyundai', 'TN05', 'TN05QR5678'),
+('Venue', 'SUV', 'Hyundai', 'AP05', 'AP05ST9012'),
+('Nano', 'Hatchback', 'Tata', 'TS05', 'TS05UV3456'),
+('Yaris', 'Sedan', 'Toyota', 'KL05', 'KL05WX7890'),
+('Kwid', 'Hatchback', 'Renault', 'KA06', 'KA06YZ1234'),
+('Amaze', 'SUV', 'Honda', 'TN06', 'TN06AB5678'),
+('XUV700', 'SUV', 'Mahindra', 'AP06', 'AP06CD9012'),
+('Alto', 'Hatchback', 'Maruti Suzuki', 'TS06', 'TS06EF3456'),
+('Tigor', 'Sedan', 'Tata', 'KL06', 'KL06GH7890');
+
+
+-- Create the table
+
+CREATE TABLE Bike (
+    Bike_model TEXT,
+    Bike_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT,
+    Registration_No TEXT
+);
+
+INSERT INTO Bike (Bike_model, Bike_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+
+('Apache', 'Sports', 'TVS', 'KA01', 'KA01AB1234'),
+('Pulsar', 'Sports', 'Bajaj', 'TN01', 'TN01CD5678'),
+('Activa', 'Scooter', 'Honda', 'AP01', 'AP01EF9012'),
+('Gixxer', 'Sports', 'Suzuki', 'TS01', 'TS01GH3456'),
+('Duke', 'Sports', 'KTM', 'KL01', 'KL01IJ7890'),
+('Bullet', 'Cruiser', 'Royal Enfield', 'KA02', 'KA02KL1234'),
+('FZ', 'Sports', 'Yamaha', 'TN02', 'TN02MN5678'),
+('Splendor', 'Commute', 'Hero', 'AP02', 'AP02OP9012'),
+('Dominar', 'Sports', 'Bajaj', 'TS02', 'TS02QR3456'),
+('Classic', 'Cruiser', 'Royal Enfield', 'KL02', 'KL02ST7890'),
+('CBR', 'Sports', 'Honda', 'KA03', 'KA03UV1234'),
+('Jupiter', 'Scooter', 'TVS', 'TN03', 'TN03WX5678'),
+('Fascino', 'Scooter', 'Yamaha', 'AP03', 'AP03YZ9012'),
+('Access', 'Scooter', 'Suzuki', 'TS03', 'TS03AB3456'),
+('Victor', 'Commute', 'TVS', 'KL03', 'KL03CD7890'),
+('R15', 'Sports', 'Yamaha', 'KA04', 'KA04EF1234'),
+('Avenger', 'Cruiser', 'Bajaj', 'TN04', 'TN04GH5678'),
+('Pleasure', 'Scooter', 'Hero', 'AP04', 'AP04IJ9012'),
+('Dio', 'Scooter', 'Honda', 'TS04', 'TS04KL3456'),
+('Impulse', 'Commute', 'Hero', 'KL04', 'KL04MN7890'),
+('Hayabusa', 'Sports', 'Suzuki', 'KA05', 'KA05OP1234'),
+('Ray', 'Scooter', 'Yamaha', 'TN05', 'TN05QR5678'),
+('FZS', 'Sports', 'Yamaha', 'AP05', 'AP05ST9012'),
+('Platina', 'Commute', 'Bajaj', 'TS05', 'TS05UV3456'),
+('Maestro', 'Scooter', 'Hero', 'KL05', 'KL05WX7890'),
+('Unicorn', 'Commute', 'Honda', 'KA06', 'KA06YZ1234'),
+('Suzuki', 'Scooter', 'Access', 'TN06', 'TN06AB5678'),
+('Ntorq', 'Scooter', 'TVS', 'AP06', 'AP06CD9012'),
+('Glamour', 'Commute', 'Hero', 'TS06', 'TS06EF3456'),
+('RTR', 'Sports', 'TVS', 'KL06', 'KL06GH7890');
+
+
+
+-- Create the BUS table
+
+CREATE TABLE BUS (
+    Bus_model TEXT,
+    Bus_Type TEXT,
+    Brand_Name TEXT NUll,
+    RTA_District_code TEXT,
+    Registration_No TEXT
+);
+
+INSERT INTO BUS (Bus_model, Bus_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+
+('Volvo 7500', 'Non-AC', 'Volvo', 'KA05', 'KA05EF9101'),
+('Tata 1109', 'Sleeper', 'Tata', 'KA01', 'KA01GH2345'),
+('Ashok Leyland 911', 'Mini Bus', 'Ashok Leyland', 'AP03', 'AP03IJ3456'),
+('Scania 9000', 'Luxury', 'Scania', 'DL01', 'DL01KL4567'),
+('Mercedes 600', 'AC Sleeper', 'Mercedes', 'UP02', 'UP02MN6789'),
+('Eicher 400', 'Non-AC Seater', 'Eicher', 'UP32', 'UP32OP7890'),
+('Force Traveller 26', 'Semi-Luxury', 'Force', 'RJ14', 'RJ14QR1234'),
+('Volvo B8R', 'Volvo Sleeper', 'Volvo', 'GJ01', 'GJ01ST2345'),
+('Isuzu LT134P', 'AC Mini Bus', 'Isuzu', 'MP09', 'MP09UV3456'),
+('Scania Metrolink HD', 'Non-AC Mini Bus', 'Scania', 'TN22', 'TN22WX4567'),
+('Ashok Leyland 12M', 'Sleeper Coach', 'Ashok Leyland', 'PB10', 'PB10YZ5678'),
+('Volvo 9400 XL', 'AC Luxury', 'Volvo', 'KA55', 'KA55AB6789'),
+('Tata Starbus', 'Non-AC Sleeper', 'Tata', 'MH12', 'MH12CD7890'),
+('Force Traveller 3350', 'Semi-Sleeper', 'Force', 'DL03', 'DL03EF8901'),
+('Mercedes-Benz 1518', 'AC Seater', 'Mercedes', 'HR05', 'HR05GH9012'),
+('Mitsubishi Rosa', 'Non-AC Seater', 'Mitsubishi', 'UP14', 'UP14IJ0123'),
+('Ashok Leyland Viking', 'Sleeper', 'Ashok Leyland', 'UP21', 'UP21KL1234'),
+('Scania Metrolink', 'Mini Bus', 'Scania', 'MP03', 'MP03MN2345'),
+('Volvo 7900 Hybrid', 'Luxury', 'Volvo', 'RJ03', 'RJ03OP3456'),
+('Eicher Skyline Pro', 'AC Sleeper', 'Eicher', 'GJ12', 'GJ12QR4567'),
+('Isuzu LT134', 'Non-AC Mini Bus', 'Isuzu', 'TN11', 'TN11ST5678'),
+('Mahindra Tourister', 'Semi-Luxury', 'Mahindra', 'MH06', 'MH06UV6789'),
+('BharatBenz 1623R', 'Volvo Sleeper', 'BharatBenz', 'DL05', 'DL05WX7890'),
+('Force Traveller 26+1', 'AC Mini Bus', 'Force', 'HR03', 'HR03YZ9012'),
+('Tata Marcopolo', 'Non-AC Sleeper', 'Tata', 'UP08', 'UP08AB0123'),
+('Scania Metrolink HD 14.5 M', 'Semi-Sleeper', 'Scania', 'MP23', 'MP23CD1234'),
+('Volvo 7700 Hybrid', 'AC Seater', 'Volvo', 'GJ07', 'GJ07EF2345'),
+('Ashok Leyland Falcon', 'Non-AC Seater', 'Ashok Leyland', 'RJ11', 'RJ11GH3456');
+
+
+
+-- Create the table structure
+
+CREATE TABLE Tractor (
+    Tractor_model TEXT,
+    Tractor_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT,
+    Registration_No TEXT
+);
+
+INSERT INTO Tractor (Tractor_model, Tractor_Type, Brand_Name, RTA_District_code, Registration_No)
+VALUES
+('Mahindra 575 DI', 'Tractor', 'Mahindra', 'TN01', 'TN01AB1234'),
+('John Deere 5050D', 'Tractor', 'John Deere', 'MH02', 'MH02CD5678'),
+('Swaraj 744 FE', 'Tractor', 'Swaraj', 'UP03', 'UP03EF9101'),
+('Massey Ferguson 241 DI', 'Tractor', 'Massey Ferguson', 'KA04', 'KA04GH2345'),
+('New Holland 3630 TX', 'Tractor', 'New Holland', 'DL05', 'DL05IJ3456'),
+('Eicher 333 Super DI', 'Tractor', 'Eicher', 'GJ06', 'GJ06KL4567'),
+('Sonalika DI 750 III', 'Tractor', 'Sonalika', 'MP07', 'MP07MN6789'),
+('Kubota NeoStar B2741', 'Tractor', 'Kubota', 'RJ08', 'RJ08OP7890'),
+('Powertrac Euro 50', 'Tractor', 'Powertrac', 'HR09', 'HR09QR1234'),
+('TAFE 45 DI', 'Tractor', 'TAFE', 'DL10', 'DL10ST2345'),
+('Escorts Farmtrac 45', 'Tractor', 'Escorts', 'MH11', 'MH11UV3456'),
+('Indo Farm 2030 DI', 'Tractor', 'Indo Farm', 'UP12', 'UP12WX4567'),
+('Mahindra 575 DI', 'Tractor', 'Mahindra', 'KA13', 'KA13YZ5678'),
+('John Deere 5050D', 'Tractor', 'John Deere', 'TN14', 'TN14AB6789'),
+('Swaraj 744 FE', 'Tractor', 'Swaraj', 'MH15', 'MH15CD7890');
+
+-- Create table for lorries
+
+CREATE TABLE Lorry (
+    Lorry_model TEXT,
+    Lorry_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT,
+    Registration_No TEXT
+);
+
+-- Insert data for lorries
+INSERT INTO Lorry (Lorry_model, Lorry_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+    ('FH16', 'Heavy Duty', 'Volvo', 'TN 01 AB 1234', 'TN 01 AB 1234'),
+    ('R730', 'Heavy Duty', 'Scania', 'KA 02 CD 5678', 'KA 02 CD 5678'),
+    ('Actros', 'Heavy Duty', 'Mercedes-Benz', 'MH 03 EF 9012', 'MH 03 EF 9012'),
+    ('TGX', 'Heavy Duty', 'MAN', 'UP 04 GH 3456', 'UP 04 GH 3456'),
+    ('XF', 'Heavy Duty', 'DAF', 'DL 05 IJ 6789', 'DL 05 IJ 6789'),
+    ('Stralis', 'Heavy Duty', 'Iveco', 'TS 06 KL 1234', 'TS 06 KL 1234'),
+    ('T Range', 'Heavy Duty', 'Renault', 'AP 07 MN 5678', 'AP 07 MN 5678'),
+    ('Super Great', 'Heavy Duty', 'Fuso', 'KL 08 OP 9012', 'KL 08 OP 9012'),
+    ('700 Series', 'Heavy Duty', 'Hino', 'GJ 09 QR 3456', 'GJ 09 QR 3456'),
+    ('T680', 'Heavy Duty', 'Kenworth', 'TN 10 ST 6789', 'TN 10 ST 6789'),
+    ('579', 'Heavy Duty', 'Peterbilt', 'KA 11 UV 1234', 'KA 11 UV 1234'),
+    ('Anthem', 'Heavy Duty', 'Mack', 'MH 12 WX 5678', 'MH 12 WX 5678'),
+    ('5700', 'Heavy Duty', 'Western Star', 'UP 13 YZ 9012', 'UP 13 YZ 9012'),
+    ('Giga', 'Heavy Duty', 'Isuzu', 'DL 14 AB 3456', 'DL 14 AB 3456'),
+    ('Quon', 'Heavy Duty', 'UD Trucks', 'TS 15 CD 6789', 'TS 15 CD 6789'),
+    ('Captain', 'Medium Duty', 'Ashok Leyland', 'AP 16 EF 1234', 'AP 16 EF 1234'),
+    ('Prima', 'Medium Duty', 'Tata Motors', 'KL 17 GH 5678', 'KL 17 GH 5678'),
+    ('FURIO', 'Medium Duty', 'Mahindra', 'GJ 18 IJ 9012', 'GJ 18 IJ 9012'),
+    ('Pro 8031XM', 'Medium Duty', 'Eicher', 'TN 19 KL 3456', 'TN 19 KL 3456'),
+    ('2523C', 'Medium Duty', 'BharatBenz', 'KA 20 MN 6789', 'KA 20 MN 6789');
+
+-- Create the Other_vehicles table
+
+CREATE TABLE Other_vehicles (
+    Other_model TEXT,
+    Other_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT,
+    Registration_No TEXT
+);
+
+INSERT INTO Other_vehicles (Other_model, Other_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+
+('Force Gurkha', 'Mini SUV', 'Force', 'DL02', 'DL02AB1234'),
+('Piaggio Ape', 'Mini Truck', 'Piaggio', 'KA04', 'KA04CD5678'),
+('Mahindra Bolero Pik-Up', 'Mini Truck', 'Mahindra', 'TN03', 'TN03EF9101'),
+('Maruti Suzuki Super Carry', 'Mini Truck', 'Maruti Suzuki', 'MH04', 'MH04GH2345'),
+('Tata Ace', 'Mini Truck', 'Tata', 'GJ03', 'GJ03IJ3456'),
+('Ashok Leyland Dost+', 'Mini Truck', 'Ashok Leyland', 'UP04', 'UP04KL4567'),
+('Mahindra Jeeto', 'Mini Truck', 'Mahindra', 'DL07', 'DL07MN6789'),
+('Maruti Suzuki Eeco', 'Mini Van', 'Maruti Suzuki', 'HR06', 'HR06OP7890'),
+('Tata Magic', 'Mini Van', 'Tata', 'MP05', 'MP05QR1234'),
+('Mahindra Supro Mini Van', 'Mini Van', 'Mahindra', 'KA10', 'KA10ST2345'),
+('Force Traveller Ambulance', 'Mini Bus', 'Force', 'RJ07', 'RJ07AB5678'),
+('Piaggio Porter 700', 'Mini Truck', 'Piaggio', 'UP18', 'UP18CD9012'),
+('Mahindra Treo', 'Electric Rickshaw', 'Mahindra', 'TN14', 'TN14EF2345'),
+('Tata Ace Zip', 'Mini Truck', 'Tata', 'DL08', 'DL08GH5678'),
+('Maruti Suzuki Omni', 'Mini Van', 'Maruti Suzuki', 'MH15', 'MH15IJ8901'),
+('Piaggio Ape City', 'Mini Truck', 'Piaggio', 'GJ09', 'GJ09KL2345'),
+('Mahindra Alfa', 'Three Wheeler', 'Mahindra', 'HR07', 'HR07MN5678'),
+('Tata Intra', 'Mini Truck', 'Tata', 'UP19', 'UP19OP9012'),
+('Ashok Leyland MiTR', 'Mini Truck', 'Ashok Leyland', 'KA11', 'KA11CD2345'),
+('Force Trax', 'Mini Van', 'Force', 'MP06', 'MP06QR5678'),
+('Piaggio Ape Xtra', 'Mini Truck', 'Piaggio', 'RJ08', 'RJ08EF7890'),
+('Mahindra eSupro', 'Electric Van', 'Mahindra', 'DL12', 'DL12GH1234'),
+('Maruti Suzuki Versa', 'Mini Van', 'Maruti Suzuki', 'UP20', 'UP20IJ4567'),
+('Piaggio Ape DX', 'Mini Truck', 'Piaggio', 'MH16', 'MH16KL7890'),
+('Mahindra Gio', 'Mini Truck', 'Mahindra', 'GJ10', 'GJ10MN1234'),
+('Tata Super Ace', 'Mini Truck', 'Tata', 'HR08', 'HR08OP4567'),
+('Ashok Leyland Dost', 'Mini Truck', 'Ashok Leyland', 'KA12', 'KA12CD7890'),
+('Force Trump 40', 'Mini Van', 'Force', 'DL13', 'DL13EF1234'),
+('Piaggio Ape E-City', 'Electric Auto', 'Piaggio', 'MP07', 'MP07QR4567'),
+('Mahindra Jeeto Plus', 'Mini Truck', 'Mahindra', 'RJ09', 'RJ09GH7890'),
+('Maruti Suzuki Ertiga Cargo', 'Mini Van', 'Maruti Suzuki', 'DL14', 'DL14IJ1234');
+
+
+-- Create the Auto table
+
+CREATE TABLE Auto (
+    Auto_model TEXT,
+    Auto_Type TEXT,
+    Brand_Name TEXT NULL,
+    RTA_District_code TEXT ,
+    Registration_No TEXT
+);
+
+INSERT INTO Auto (Auto_model, Auto_Type, Brand_Name, RTA_District_code, Registration_No) VALUES
+
+('Bajaj RE', 'Auto Rickshaw', 'Bajaj', 'KA21', 'KA21AB1234'),
+('Piaggio Ape City', 'Auto Rickshaw', 'Piaggio', 'TN22', 'TN22CD5678'),
+('Mahindra Alfa', 'Three Wheeler', 'Mahindra', 'MH23', 'MH23EF9101'),
+('TVS King', 'Auto Rickshaw', 'TVS', 'GJ24', 'GJ24GH2345'),
+('Atul Gem', 'Electric Rickshaw', 'Atul', 'DL25', 'DL25IJ3456'),
+('Piaggio Ape Xtra LDX', 'Auto Rickshaw', 'Piaggio', 'UP26', 'UP26KL4567'),
+('Bajaj Maxima C', 'Cargo Auto', 'Bajaj', 'RJ27', 'RJ27MN6789'),
+('Mahindra Treo Zor', 'Electric Cargo Auto', 'Mahindra', 'MP28', 'MP28OP7890'),
+('TVS Dazz', 'Auto Rickshaw', 'TVS', 'HR29', 'HR29QR1234'),
+('Atul Gemini', 'Auto Rickshaw', 'Atul', 'KA30', 'KA30ST2345'),
+('Piaggio Ape DXL', 'Auto Rickshaw', 'Piaggio', 'TN31', 'TN31AB5678'),
+('Bajaj Maxima CNG', 'Auto Rickshaw', 'Bajaj', 'MH32', 'MH32CD9012'),
+('Mahindra e-Alfa Mini', 'Electric Auto Rickshaw', 'Mahindra', 'GJ33', 'GJ33EF2345'),
+('TVS XL100', 'Auto Rickshaw', 'TVS', 'DL34', 'DL34GH5678'),
+('Atul Shakti', 'Electric Rickshaw', 'Atul', 'UP35', 'UP35IJ8901');
+
+
+-- Create the table
+
+CREATE TABLE Bike_Owners (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+
+INSERT INTO Bike_Owners (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+
+    ('KA01AB1234', 'John Doe', '123, Example Street, Bangalore', '+91 9876543210', 'john.doe@example.com'),
+    ('TN01CD5678', 'Jane Smith', '456, Sample Road, Chennai', '+91 8765432109', 'jane.smith@example.com'),
+    ('AP01EF9012', 'Michael Johnson', '789, Test Avenue, Hyderabad', '+91 7654321098', 'michael.johnson@example.com'),
+    ('TS01GH3456', 'Emily Brown', '101, Demo Lane, Hyderabad', '+91 6543210987', 'emily.brown@example.com'),
+    ('KL01IJ7890', 'David Wilson', '321, Trial Road, Kochi', '+91 5432109876', 'david.wilson@example.com'),
+    ('KA02KL1234', 'Sarah Davis', '654, Practice Street, Bangalore', '+91 4321098765', 'sarah.davis@example.com'),
+    ('TN02MN5678', 'Chris Martinez', '987, Sample Road, Chennai', '+91 3210987654', 'chris.martinez@example.com'),
+    ('AP02OP9012', 'Lisa Garcia', '234, Test Avenue, Hyderabad', '+91 2109876543', 'lisa.garcia@example.com'),
+    ('TS02QR3456', 'Daniel Rodriguez', '567, Demo Lane, Hyderabad', '+91 1098765432', 'daniel.rodriguez@example.com'),
+    ('KL02ST7890', 'Jessica Taylor', '890, Trial Road, Kochi', '+91 0987654321', 'jessica.taylor@example.com'),
+    ('KA03UV1234', 'Matthew Thomas', '234, Example Street, Bangalore', '+91 9876543210', 'matthew.thomas@example.com'),
+    ('TN03WX5678', 'Ashley Martinez', '567, Sample Road, Chennai', '+91 8765432109', 'ashley.martinez@example.com'),
+    ('AP03YZ9012', 'Kevin Harris', '890, Test Avenue, Hyderabad', '+91 7654321098', 'kevin.harris@example.com'),
+    ('TS03AB3456', 'Amanda Allen', '123, Demo Lane, Hyderabad', '+91 6543210987', 'amanda.allen@example.com'),
+    ('KL03CD7890', 'Ryan Lewis', '456, Trial Road, Kochi', '+91 5432109876', 'ryan.lewis@example.com'),
+    ('KA04EF1234', 'Nicole Young', '789, Example Street, Bangalore', '+91 4321098765', 'nicole.young@example.com'),
+    ('TN04GH5678', 'Jason King', '101, Sample Road, Chennai', '+91 3210987654', 'jason.king@example.com'),
+    ('AP04IJ9012', 'Melissa Wright', '234, Test Avenue, Hyderabad', '+91 2109876543', 'melissa.wright@example.com'),
+    ('TS04KL3456', 'Justin Scott', '567, Demo Lane, Hyderabad', '+91 1098765432', 'justin.scott@example.com'),
+    ('KL04MN7890', 'Laura Hill', '890, Trial Road, Kochi', '+91 0987654321', 'laura.hill@example.com'),
+    ('KA05OP1234', 'Brandon Green', '123, Example Street, Bangalore', '+91 9876543210', 'brandon.green@example.com'),
+    ('TN05QR5678', 'Hannah Baker', '456, Sample Road, Chennai', '+91 8765432109', 'hannah.baker@example.com'),
+    ('AP05ST9012', 'Andrew Nelson', '789, Test Avenue, Hyderabad', '+91 7654321098', 'andrew.nelson@example.com'),
+    ('TS05UV3456', 'Stephanie Carter', '101, Demo Lane, Hyderabad', '+91 6543210987', 'stephanie.carter@example.com'),
+    ('KL05WX7890', 'Joshua Perez', '234, Trial Road, Kochi', '+91 5432109876', 'joshua.perez@example.com'),
+    ('KA06YZ1234', 'Megan Morris', '567, Example Street, Bangalore', '+91 4321098765', 'megan.morris@example.com'),
+    ('TN06AB5678', 'Erica Rivera', '890, Sample Road, Chennai', '+91 3210987654', 'erica.rivera@example.com'),
+    ('AP06CD9012', 'Adam Cooper', '123, Test Avenue, Hyderabad', '+91 2109876543', 'adam.cooper@example.com'),
+    ('TS06EF3456', 'Samantha Reed', '456, Demo Lane, Hyderabad', '+91 1098765432', 'samantha.reed@example.com'),
+    ('KL06GH7890', 'Patrick Cook', '789, Trial Road, Kochi', '+91 0987654321', 'patrick.cook@example.com');
+
+-- Create table for Car_Owners
+
+CREATE TABLE Car_Owners (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+-- Insert data into Cars_data
+
+INSERT INTO Car_Owners (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+    ('KA01AB1234', 'John Doe', '123, Example Street, Bangalore', '+91 9876543210', 'john.doe@example.com'),
+    ('TN01CD5678', 'Jane Smith', '456, Sample Road, Chennai', '+91 8765432109', 'jane.smith@example.com'),
+    ('AP01EF9012', 'Michael Johnson', '789, Test Avenue, Hyderabad', '+91 7654321098', 'michael.johnson@example.com'),
+    ('TS01GH3456', 'Emily Brown', '101, Demo Lane, Hyderabad', '+91 6543210987', 'emily.brown@example.com'),
+    ('KL01IJ7890', 'David Wilson', '321, Trial Road, Kochi', '+91 5432109876', 'david.wilson@example.com'),
+    ('KA02KL1234', 'Jessica Taylor', '890, Trial Road, Bangalore', '+91 0987654321', 'jessica.taylor@example.com'),
+    ('TN02MN5678', 'Matthew Thomas', '234, Example Street, Chennai', '+91 9876543210', 'matthew.thomas@example.com'),
+    ('AP02OP9012', 'Ashley Martinez', '567, Sample Road, Hyderabad', '+91 8765432109', 'ashley.martinez@example.com'),
+    ('TS02QR3456', 'Kevin Harris', '890, Test Avenue, Hyderabad', '+91 7654321098', 'kevin.harris@example.com'),
+    ('KL02ST7890', 'Amanda Allen', '123, Demo Lane, Kochi', '+91 6543210987', 'amanda.allen@example.com'),
+    ('KA03UV1234', 'Justin Scott', '567, Example Street, Bangalore', '+91 1098765432', 'justin.scott@example.com'),
+    ('TN03WX5678', 'Laura Hill', '890, Sample Road, Chennai', '+91 0987654321', 'laura.hill@example.com'),
+    ('AP03YZ9012', 'Brandon Green', '123, Test Avenue, Hyderabad', '+91 9876543210', 'brandon.green@example.com'),
+    ('TS03AB3456', 'Hannah Baker', '456, Demo Lane, Hyderabad', '+91 8765432109', 'hannah.baker@example.com'),
+    ('KL03CD7890', 'Andrew Nelson', '789, Trial Road, Kochi', '+91 7654321098', 'andrew.nelson@example.com'),
+    ('KA04EF1234', 'Adam Cooper', '123, Example Street, Bangalore', '+91 2109876543', 'adam.cooper@example.com'),
+    ('TN04GH5678', 'Samantha Reed', '456, Sample Road, Chennai', '+91 1098765432', 'samantha.reed@example.com'),
+    ('AP04IJ9012', 'Patrick Cook', '789, Test Avenue, Hyderabad', '+91 0987654321', 'patrick.cook@example.com');
+    ('TS04KL3456', 'Jessica White', '456, Avenue Road, Hyderabad', '+91 9876543210', 'jessica.white@example.com'),
+    ('KL04MN7890', 'Michael Brown', '789, Crescent Lane, Kochi', '+91 8765432109', 'michael.brown@example.com'),
+    ('KA05OP1234', 'Sophia Garcia', '101, Boulevard Street, Bangalore', '+91 7654321098', 'sophia.garcia@example.com'),
+    ('TN05QR5678', 'Ethan Martinez', '234, Demo Lane, Chennai', '+91 6543210987', 'ethan.martinez@example.com'),
+    ('AP05ST9012', 'Isabella Robinson', '567, Sample Road, Hyderabad', '+91 5432109876', 'isabella.robinson@example.com'),
+    ('TS05UV3456', 'Mason Clark', '890, Avenue Road, Hyderabad', '+91 4321098765', 'mason.clark@example.com'),
+    ('KL05WX7890', 'Ava Lewis', '123, Example Street, Kochi', '+91 3210987654', 'ava.lewis@example.com'),
+    ('KA06YZ1234', 'Lucas King', '456, Crescent Lane, Bangalore', '+91 2109876543', 'lucas.king@example.com'),
+    ('TN06AB5678', 'Amelia Hill', '789, Sample Road, Chennai', '+91 1098765432', 'amelia.hill@example.com'),
+    ('AP06CD9012', 'Oliver Taylor', '101, Boulevard Street, Hyderabad', '+91 0987654321', 'oliver.taylor@example.com'),
+    ('TS06EF3456', 'Evelyn Wright', '234, Demo Lane, Hyderabad', '+91 9876543210', 'evelyn.wright@example.com'),
+    ('KL06GH7890', 'Logan Scott', '567, Sample Road, Kochi', '+91 8765432109', 'logan.scott@example.com');
+
+-- Create the Bus table
+
+CREATE TABLE Buses_data (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+-- Insert example Indian data for buses
+
+INSERT INTO Buses_data (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+
+    ('KA05EF9101', 'Volvo 7500', 'Non-AC', 'Volvo', 'KA05', 'KA05EF9101'),
+    ('KA01GH2345', 'Tata 1109', 'Sleeper', 'Tata', 'KA01', 'KA01GH2345'),
+    ('AP03IJ3456', 'Ashok Leyland 911', 'Mini Bus', 'Ashok Leyland', 'AP03', 'AP03IJ3456'),
+    ('DL01KL4567', 'Scania 9000', 'Luxury', 'Scania', 'DL01', 'DL01KL4567'),
+    ('UP02MN6789', 'Mercedes 600', 'AC Sleeper', 'Mercedes', 'UP02', 'UP02MN6789'),
+    ('UP32OP7890', 'Eicher 400', 'Non-AC Seater', 'Eicher', 'UP32', 'UP32OP7890'),
+    ('RJ14QR1234', 'Force Traveller 26', 'Semi-Luxury', 'Force', 'RJ14', 'RJ14QR1234'),
+    ('GJ01ST2345', 'Volvo B8R', 'Volvo Sleeper', 'Volvo', 'GJ01', 'GJ01ST2345'),
+    ('MP09UV3456', 'Isuzu LT134P', 'AC Mini Bus', 'Isuzu', 'MP09', 'MP09UV3456'),
+    ('TN22WX4567', 'Scania Metrolink HD', 'Non-AC Mini Bus', 'Scania', 'TN22', 'TN22WX4567'),
+    ('PB10YZ5678', 'Ashok Leyland 12M', 'Sleeper Coach', 'Ashok Leyland', 'PB10', 'PB10YZ5678'),
+    ('KA55AB6789', 'Volvo 9400 XL', 'AC Luxury', 'Volvo', 'KA55', 'KA55AB6789'),
+    ('MH12CD7890', 'Tata Starbus', 'Non-AC Sleeper', 'Tata', 'MH12', 'MH12CD7890'),
+    ('DL03EF8901', 'Force Traveller 3350', 'Semi-Sleeper', 'Force', 'DL03', 'DL03EF8901'),
+    ('HR05GH9012', 'Mercedes-Benz 1518', 'AC Seater', 'Mercedes', 'HR05', 'HR05GH9012'),
+    ('UP14IJ0123', 'Mitsubishi Rosa', 'Non-AC Seater', 'Mitsubishi', 'UP14', 'UP14IJ0123'),
+    ('UP21KL1234', 'Ashok Leyland Viking', 'Sleeper', 'Ashok Leyland', 'UP21', 'UP21KL1234'),
+    ('MP03MN2345', 'Scania Metrolink', 'Mini Bus', 'Scania', 'MP03', 'MP03MN2345'),
+    ('RJ03OP3456', 'Volvo 7900 Hybrid', 'Luxury', 'Volvo', 'RJ03', 'RJ03OP3456'),
+    ('GJ12QR4567', 'Eicher Skyline Pro', 'AC Sleeper', 'Eicher', 'GJ12', 'GJ12QR4567'),
+    ('TN11ST5678', 'Isuzu LT134', 'Non-AC Mini Bus', 'Isuzu', 'TN11', 'TN11ST5678'),
+    ('MH06UV6789', 'Mahindra Tourister', 'Semi-Luxury', 'Mahindra', 'MH06', 'MH06UV6789'),
+    ('DL05WX7890', 'BharatBenz 1623R', 'Volvo Sleeper', 'BharatBenz', 'DL05', 'DL05WX7890'),
+    ('HR03YZ9012', 'Force Traveller 26+1', 'AC Mini Bus', 'Force', 'HR03', 'HR03YZ9012'),
+    ('UP08AB0123', 'Tata Marcopolo', 'Non-AC Sleeper', 'Tata', 'UP08', 'UP08AB0123'),
+    ('MP23CD1234', 'Scania Metrolink HD 14.5 M', 'Semi-Sleeper', 'Scania', 'MP23', 'MP23CD1234'),
+    ('GJ07EF2345', 'Volvo 7700 Hybrid', 'AC Seater', 'Volvo', 'GJ07', 'GJ07EF2345'),
+    ('RJ11GH3456', 'Ashok Leyland Falcon', 'Non-AC Seater', 'Ashok Leyland', 'RJ11', 'RJ11GH3456');
+
+
+
+-- Create the Tractor table
+
+CREATE TABLE Tractor_Owners (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+-- Insert example Indian data for tractors
+
+INSERT INTO Tractor_Owners (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+('TN01AB1234', 'Ramesh Kumar', '123, Main Street, Chennai', '+91 9876543210', 'ramesh@example.com'),
+('MH02CD5678', 'Suresh Gupta', '456, MG Road, Mumbai', '+91 8765432109', 'suresh@example.com'),
+('UP03EF9101', 'Geeta Sharma', '789, Park Avenue, Lucknow', '+91 7654321098', 'geeta@example.com'),
+('KA04GH2345', 'Ravi Singh', '101, Gandhi Nagar, Bangalore', '+91 6543210987', 'ravi@example.com'),
+('DL05IJ3456', 'Priya Verma', '234, Connaught Place, New Delhi', '+91 5432109876', 'priya@example.com'),
+('GJ06KL4567', 'Anil Patel', '567, Satellite Road, Ahmedabad', '+91 4321098765', 'anil@example.com'),
+('MP07MN6789', 'Kiran Kumar', '890, Civil Lines, Bhopal', '+91 3210987654', 'kiran@example.com'),
+('RJ08OP7890', 'Meena Devi', '123, Jaipur Road, Jaipur', '+91 2109876543', 'meena@example.com'),
+('HR09QR1234', 'Amit Jain', '456, Sector 15, Gurgaon', '+91 1098765432', 'amit@example.com'),
+('DL10ST2345', 'Pooja Sharma', '789, Nehru Nagar, Delhi', '+91 0987654321', 'pooja@example.com'),
+('MH11UV3456', 'Sanjay Singh', '101, Kalyan West, Mumbai', '+91 9876543210', 'sanjay@example.com'),
+('UP12WX4567', 'Neha Gupta', '234, Indira Nagar, Lucknow', '+91 8765432109', 'neha@example.com'),
+('KA13YZ5678', 'Rajesh Patel', '567, MG Road, Bangalore', '+91 7654321098', 'rajesh@example.com'),
+('TN14AB6789', 'Sunita Verma', '890, Park Street, Chennai', '+91 6543210987', 'sunita@example.com'),
+('MH15CD7890', 'Vikram Singh', '123, Andheri East, Mumbai', '+91 5432109876', 'vikram@example.com');
+
+-- Create the Other_vehicle_Owners table
+
+CREATE TABLE Other_vehicle_Owners (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+INSERT INTO Other_vehicle_Owners (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+
+('DL02AB1234', 'John Doe', '123, Example Street, Bangalore', '+91 9876543210', 'johndoe@example.com'),
+('KA04CD5678', 'Jane Smith', '456, Sample Road, Mumbai', '+91 8765432109', 'janesmith@example.com'),
+('TN03EF9101', 'Michael Brown', '789, Test Avenue, Ahmedabad', '+91 7654321098', 'michaelbrown@example.com'),
+('MH04GH2345', 'Emily Johnson', '321, Trial Boulevard, Lucknow', '+91 6543210987', 'emilyjohnson@example.com'),
+('GJ03IJ3456', 'David Wilson', '654, Experiment Lane, Delhi', '+91 5432109876', 'davidwilson@example.com'),
+('UP04KL4567', 'Emma Lee', '987, Pilot Circle, Chennai', '+91 4321098765', 'emmalee@example.com'),
+('DL07MN6789', 'Chris Taylor', '741, Prototype Place, Mumbai', '+91 3210987654', 'christaylor@example.com'),
+('HR06OP7890', 'Olivia Garcia', '159, Model Drive, Delhi', '+91 2109876543', 'oliviagarcia@example.com'),
+('MP05QR1234', 'Andrew Martinez', '852, Simulation Street, Ahmedabad', '+91 1098765432', 'andrewmartinez@example.com'),
+('KA10ST2345', 'Sophia Lopez', '369, Pilot Circle, Gurgaon', '+91 0987654321', 'sophialopez@example.com'),
+('RJ07AB5678', 'Matthew Clark', '963, Virtual Road, Lucknow', '+91 8765432109', 'matthewclark@example.com'),
+('UP18CD9012', 'Ava Hernandez', '147, Experiment Lane, Bangalore', '+91 7654321098', 'avahernandez@example.com'),
+('TN14EF2345', 'James Young', '258, Testing Grounds, Delhi', '+91 6543210987', 'jamesyoung@example.com'),
+('DL08GH5678', 'Isabella Moore', '753, Pilot Circle, Bhopal', '+91 5432109876', 'isabellamoore@example.com'),
+('MH15IJ8901', 'Lucas Lewis', '369, Sample Road, Jaipur', '+91 4321098765', 'lucaslewis@example.com'),
+('GJ09KL2345', 'Sophia Brown', '456, Example Street, Bangalore', '+91 9876543210', 'sophiabrown@example.com'),
+('HR07MN5678', 'Michael Smith', '789, Sample Road, Mumbai', '+91 8765432109', 'michaelsmith@example.com'),
+('UP19OP9012', 'Emily Johnson', '321, Test Avenue, Ahmedabad', '+91 7654321098', 'emilyjohnson@example.com'),
+('DL08GH5678', 'David Miller', '654, Trial Boulevard, Lucknow', '+91 6543210987', 'davidmiller@example.com'),
+('GJ09KL2345', 'Emma Davis', '987, Experiment Lane, Delhi', '+91 5432109876', 'emmadavis@example.com'),
+('MH16EF9101', 'Chris Anderson', '741, Pilot Circle, Chennai', '+91 4321098765', 'chrisanderson@example.com'),
+('DL14GH2345', 'Olivia Wilson', '159, Prototype Place, Mumbai', '+91 3210987654', 'oliviawilson@example.com'),
+('GJ09IJ3456', 'Andrew Taylor', '852, Model Drive, Delhi', '+91 2109876543', 'andrewtaylor@example.com'),
+('HR07KL4567', 'Sophia Martin', '369, Simulation Street, Ahmedabad', '+91 1098765432', 'sophiamartin@example.com'),
+('UP19AB1234', 'Matthew Harris', '963, Virtual Road, Lucknow', '+91 0987654321', 'matthewharris@example.com'),
+('KA12CD5678', 'Ava Lee', '147, Experiment Lane, Bangalore', '+91 8765432109', 'avalee@example.com'),
+('DL13EF9101', 'James Clark', '258, Testing Grounds, Delhi', '+91 7654321098', 'jamesclark@example.com'),
+('MP07GH2345', 'Isabella Moore', '753, Pilot Circle, Bhopal', '+91 6543210987', 'isabellamoore@example.com'),
+('RJ09IJ3456', 'Lucas Lewis', '369, Sample Road, Jaipur', '+91 5432109876', 'lucaslewis@example.com');
+
+
+-- Create the Lorry_Owners
+
+CREATE TABLE Lorry_Owners (
+    Registration_No TEXT NULL,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+
+INSERT INTO Lorry_data (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+
+    ('TN 01 AB 1234', 'FH16', 'Heavy Duty', 'Volvo', 'TN 01 AB 1234', 'TN 01 AB 1234'),
+    ('KA 02 CD 5678', 'R730', 'Heavy Duty', 'Scania', 'KA 02 CD 5678', 'KA 02 CD 5678'),
+    ('MH 03 EF 9012', 'Actros', 'Heavy Duty', 'Mercedes-Benz', 'MH 03 EF 9012', 'MH 03 EF 9012'),
+    ('UP 04 GH 3456', 'TGX', 'Heavy Duty', 'MAN', 'UP 04 GH 3456', 'UP 04 GH 3456'),
+    ('DL 05 IJ 6789', 'XF', 'Heavy Duty', 'DAF', 'DL 05 IJ 6789', 'DL 05 IJ 6789'),
+    ('TS 06 KL 1234', 'Stralis', 'Heavy Duty', 'Iveco', 'TS 06 KL 1234', 'TS 06 KL 1234'),
+    ('AP 07 MN 5678', 'T Range', 'Heavy Duty', 'Renault', 'AP 07 MN 5678', 'AP 07 MN 5678'),
+    ('KL 08 OP 9012', 'Super Great', 'Heavy Duty', 'Fuso', 'KL 08 OP 9012', 'KL 08 OP 9012'),
+    ('GJ 09 QR 3456', '700 Series', 'Heavy Duty', 'Hino', 'GJ 09 QR 3456', 'GJ 09 QR 3456'),
+    ('TN 10 ST 6789', 'T680', 'Heavy Duty', 'Kenworth', 'TN 10 ST 6789', 'TN 10 ST 6789'),
+    ('KA 11 UV 1234', '579', 'Heavy Duty', 'Peterbilt', 'KA 11 UV 1234', 'KA 11 UV 1234'),
+    ('MH 12 WX 5678', 'Anthem', 'Heavy Duty', 'Mack', 'MH 12 WX 5678', 'MH 12 WX 5678'),
+    ('UP 13 YZ 9012', '5700', 'Heavy Duty', 'Western Star', 'UP 13 YZ 9012', 'UP 13 YZ 9012'),
+    ('DL 14 AB 3456', 'Giga', 'Heavy Duty', 'Isuzu', 'DL 14 AB 3456', 'DL 14 AB 3456'),
+    ('TS 15 CD 6789', 'Quon', 'Heavy Duty', 'UD Trucks', 'TS 15 CD 6789', 'TS 15 CD 6789'),
+    ('AP 16 EF 1234', 'Captain', 'Medium Duty', 'Ashok Leyland', 'AP 16 EF 1234', 'AP 16 EF 1234'),
+    ('KL 17 GH 5678', 'Prima', 'Medium Duty', 'Tata Motors', 'KL 17 GH 5678', 'KL 17 GH 5678'),
+    ('GJ 18 IJ 9012', 'FURIO', 'Medium Duty', 'Mahindra', 'GJ 18 IJ 9012', 'GJ 18 IJ 9012'),
+    ('TN 19 KL 3456', 'Pro 8031XM', 'Medium Duty', 'Eicher', 'TN 19 KL 3456', 'TN 19 KL 3456'),
+    ('KA 20 MN 6789', '2523C', 'Medium Duty', 'BharatBenz', 'KA 20 MN 6789', 'KA 20 MN 6789');
+
+-- Create the Auto_Owners table
+
+CREATE TABLE Auto_Owners (
+    Registration_No TEXT PRIMARY KEY,
+    Person_name TEXT,
+    Address TEXT,
+    Phone_No TEXT,
+    Email_id TEXT
+);
+
+INSERT INTO Auto_Owners (Registration_No, Person_name, Address, Phone_No, Email_id) VALUES
+('KA21AB1234', 'John Doe', '123 Main St, New Delhi', '+91 9876543210', 'john.doe@example.com'),
+('TN22CD5678', 'Jane Smith', '456 Park Ave, Chennai', '+91 8765432109', 'jane.smith@example.com'),
+('MH23EF9101', 'Michael Brown', '789 Broadway, Mumbai', '+91 7654321098', 'michael.brown@example.com'),
+('GJ24GH2345', 'Emily Johnson', '321 Oak St, Bengaluru', '+91 6543210987', 'emily.johnson@example.com'),
+('DL25IJ3456', 'William Wilson', '567 Pine Rd, Lucknow', '+91 5432109876', 'william.wilson@example.com'),
+('UP26KL4567', 'Sophia Garcia', '890 Cedar Ln, Jaipur', '+91 4321098765', 'sophia.garcia@example.com'),
+('RJ27MN6789', 'James Martinez', '432 Elm Ave, Hyderabad', '+91 3210987654', 'james.martinez@example.com'),
+('MP28OP7890', 'Olivia Anderson', '765 Maple Blvd, Ahmedabad', '+91 2109876543', 'olivia.anderson@example.com'),
+('HR29QR1234', 'Daniel Hernandez', '987 Willow Dr, Bhopal', '+91 1098765432', 'daniel.hernandez@example.com'),
+('KA30ST2345', 'Ava Lopez', '234 Birch Pl, Chandigarh', '+91 9876543210', 'ava.lopez@example.com'),
+('TN31AB5678', 'Ethan Gonzales', '876 Spruce Ct, Gurgaon', '+91 8765432109', 'ethan.gonzales@example.com');
+
+
+
