@@ -1,0 +1,24 @@
+--Sub-Quaries
+
+SELECT Car_Model, Brand_name
+FROM 
+WHERE Brand_name = (SELECT Person_name FROM Car_Owner WHERE person_name='Johny');
+
+--USING IN OPERATOR
+
+SELECT Car_Model, Brand_name
+FROM 
+WHERE Brand_name IN (SELECT Person_name FROM Car_Owner WHERE person_name='Johny');
+
+--USING EXISTS OPERATOR
+
+SELECT Bike_model, Brand_name
+FROM Bike
+WHERE EXISTS (SELECT 1 FROM Car WHERE Car.Brand_name = Bike.Brand_name);
+
+-- USING SELECT CLAUSE
+
+SELECT Bike_type,
+       (SELECT MAX(Brand_name) FROM Bike_Owner WHERE condition) AS bike_data
+FROM Bike;
+
