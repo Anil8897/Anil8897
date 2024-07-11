@@ -1,0 +1,24 @@
+-- Count the number of orders
+
+SELECT COUNT(*) AS total_models
+FROM Car;
+
+-- Calculate the total order amount
+
+SELECT SUM(Car_model) AS total_amount
+FROM Car;
+
+-- Calculate the average order amount
+
+SELECT AVG(Person_name) AS average_amount
+FROM car_Owner;
+
+-- Find the minimum order amount
+
+SELECT MIN(Rigistration_No) AS min_amount
+FROM Lorry;
+
+-- Find the maximum order amount
+
+SELECT MAX(Models) AS max_amount
+FROM Auto;
