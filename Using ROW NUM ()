@@ -1,0 +1,21 @@
+-- Using ROW Number
+
+SELECT 
+    car_type, 
+    Brand_name, 
+    Registration_NO,
+    RTA_Code,
+    ROW_NUMBER() OVER (ORDER BY RTA_Code DESC) AS row_num
+FROM 
+    cars;
+
+---- Using ROW_NUMBER() with PARTITION BY:
+
+SELECT 
+    car_type, 
+    Brand_name, 
+    Registration_NO,
+    RTA_Code,
+    ROW_NUMBER() OVER (PARTITION BY Car_Model ORDER BY RTA_Code DESC) AS row_num
+FROM 
+    cars;
