@@ -1,0 +1,25 @@
+--USING WILD-CARD OPERATORS
+
+-- Retrieve all employees whose names start with 'J'
+
+SELECT *
+FROM Bike
+WHERE Brand_name LIKE 'J%';
+
+-- Retrieve all employees whose names end with 'son'
+
+SELECT *
+FROM car
+WHERE Brand_name LIKE '%son';
+
+-- Retrieve all employees whose names have 'e' as the second character
+
+SELECT *
+FROM Bike_Owner
+WHERE Person_name LIKE '_e%';
+
+-- Retrieve all employees whose names have exactly three characters
+
+SELECT *
+FROM Lorry
+WHERE Lorry_type LIKE '___';
