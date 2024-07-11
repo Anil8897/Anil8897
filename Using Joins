@@ -1,0 +1,38 @@
+----Using Joins
+
+--INNER JOIN
+
+SELECT *
+FROM Car
+INNER JOIN Car_Owners ON Car.Brand_name = Car_owner.Brand_name;
+
+--LEFT OUTER JOIN
+
+SELECT *
+FROM Car
+LEFT JOIN JOIN Car_Owners ON Car.Brand_name = Car_owner.Brand_name;
+
+--RIGHT OUTR JOIN
+
+SELECT *
+FROM Car
+RIGHT JOIN Car_Owners ON Car.Brand_name = Car_owner.Brand_name;
+
+--CROSS JOIN
+
+SELECT *
+FROM Bike
+CROSS JOIN Bike_Owners;
+
+--SELF JOIN
+
+SELECT Car.RTA_NO, Car.car_type
+FROM car a, car b
+WHERE a.Brand_name = b.Brand_name;
+
+--=FULL OUTER JOIN
+
+SELECT *
+FROM Car
+FULL OUTER JOIN Car_Owners ON Car.Brand_name = Car_owner.Brand_name;
+
