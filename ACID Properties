@@ -1,0 +1,56 @@
+--Using  Atomicity:
+
+BEGIN TRANSACTION;
+
+INSERT INTO orders (Vehicle_id, customer_id, order_date) 
+VALUES (1, 101, '2024-07-11');
+
+-- Insert order details
+INSERT INTO order_details (Vehicle_id, Model_name, quantity, price) 
+VALUES (1, 202, 3, 150.00);
+
+COMMIT;
+
+-- Using Consistency:
+
+CREATE TABLE orders (
+    Vehicle_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+BEGIN TRANSACTION;
+
+INSERT INTO customers (customer_id, customer_name) 
+VALUES (101, 'John Doe');
+
+INSERT INTO orders (Vehicle_id, customer_id, order_date) 
+VALUES (1, 101, '2024-07-11');
+
+COMMIT;
+
+-- USING isolation:
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+BEGIN TRANSACTION;
+
+SELECT * FROM accounts WHERE account_id = 1;
+
+UPDATE accounts SET balance = balance - 100 WHERE account_id = 1;
+
+COMMIT;
+
+-- Using  durability:
+
+BEGIN TRANSACTION;
+
+INSERT INTO transactions (transaction_id, account_id, amount) 
+VALUES (1, 1, 100.00);
+
+COMMIT;
+
+
+
+
